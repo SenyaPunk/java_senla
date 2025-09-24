@@ -7,7 +7,7 @@ import java.util.Scanner;
 import java.util.Set;
 
 public class Hangman {
-    private static final String[] WORDS = {"сенла", "мирэа", "программирование", "джава", "виселица"};
+    private static final String[] WORDS = {"сенла", "мирэа", "программирование", "джава", "висельница"};
     private static final int MAX_ATTEMPTS = 6;
 
     public static void main(String[] args) {
@@ -95,13 +95,13 @@ public class Hangman {
 
     private static void drawHangman(int attemptsLeft) {
         String[] stages = {
-                "  -----\n  |   |\n  O   |\n /|\\  |\n / \\  |\n      |\n=========",  // 0 попыток осталось
-                "  -----\n  |   |\n  O   |\n /|\\  |\n /    |\n      |\n=========",  // 1 попытка осталась
-                "  -----\n  |   |\n  O   |\n /|\\  |\n      |\n      |\n=========",  // 2 попытки осталось
-                "  -----\n  |   |\n  O   |\n /|   |\n      |\n      |\n=========",  // 3 попытки осталось
-                "  -----\n  |   |\n  O   |\n  |   |\n      |\n      |\n=========",  // 4 попытки осталось
-                "  -----\n  |   |\n  O   |\n      |\n      |\n      |\n=========",  // 5 попыток осталось
-                "  -----\n  |   |\n      |\n      |\n      |\n      |\n========="   // 6 попыток осталось (начальное состояние)
+                "  -----\n  |   |\n  O   |\n /|\\  |\n / \\  |\n      |\n=========",
+                "  -----\n  |   |\n  O   |\n /|\\  |\n /    |\n      |\n=========",
+                "  -----\n  |   |\n  O   |\n /|\\  |\n      |\n      |\n=========",
+                "  -----\n  |   |\n  O   |\n /|   |\n      |\n      |\n=========",
+                "  -----\n  |   |\n  O   |\n  |   |\n      |\n      |\n=========",
+                "  -----\n  |   |\n  O   |\n      |\n      |\n      |\n=========",
+                "  -----\n  |   |\n      |\n      |\n      |\n      |\n========="   
         };
         System.out.println(stages[attemptsLeft]);
     }
